@@ -1,11 +1,29 @@
 body {
     font-family: "Poppins", sans-serif;
+    // font-size: 1.3rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .heading-primary {
     font-family: "Philosopher", sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.heading-primary--large {
+    font-size: 6rem;
 }
 
 .heading-secondary {
     font-family: "Philosopher", sans-serif;
+    font-size: 3.5rem;
+}
+
+.heading-tertiary {
+    font-family: "Philosopher", sans-serif;
+    font-size: 2rem;
 }

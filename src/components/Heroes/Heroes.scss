@@ -1,0 +1,38 @@
+.heroes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10rem 2rem;
+    padding: 5rem;
+}
+
+.heroes-slide {
+    margin: 10rem 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    // animation-name: lefty;
+}
+
+@keyframes lefty {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.heroes-slide .splide__track {
+    overflow: visible;
+    overflow-x: clip;
+}
+
+.heroes-slide__slide {
+    filter: brightness(0.7);
+    transition: all 0.25s ease-in-out !important;
+}
+
+.heroes-slide__slide.is-active {
+    transform: scale(1.2);
+    filter: brightness(1);
+}
