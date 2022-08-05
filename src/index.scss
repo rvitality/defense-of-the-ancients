@@ -1,0 +1,39 @@
+@use "./styles/mixins.scss" as *;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// ::-webkit-scrollbar {
+//     display: none;
+// }
+
+html {
+    font-size: 100%;
+
+    @include respond(tab-land) {
+        // width < 1200?
+        font-size: 75%;
+    }
+
+    @include respond(tab-port) {
+        // width < 900?
+        font-size: 60%;
+    }
+
+    @include respond(phone) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
