@@ -5,4 +5,4 @@ Every day, millions of players worldwide enter the battle as one of over a hundr
 ## Credits
 
 -   [Dota 2](https://www.dota2.com/home) Official Page
--   [Design Inspiration] [https://dribbble.com/shots/16924353-CODA-Landing-Page-Exploration/]
+-   [Design Inspiration](https://dribbble.com/shots/16924353-CODA-Landing-Page-Exploration/)
