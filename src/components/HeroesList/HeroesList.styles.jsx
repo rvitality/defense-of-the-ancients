@@ -1,13 +1,13 @@
 import styled, { keyframes } from "styled-components";
 
-const lefty = keyframes`
+const autoDragAnimation = keyframes`
     0%{transform:translateX(0px)}
     100%{transform:translateX(-50%)}
 `;
 
 export const HeroesList = styled.div`
-    width: 14000px;
-    animation-duration: 150s;
+    width: 15000px;
+    animation-duration: 100s;
     animation-direction: normal;
 
     display: flex;
@@ -17,7 +17,7 @@ export const HeroesList = styled.div`
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-name: ${lefty};
+    animation-name: ${autoDragAnimation};
 
     &:nth-child(2) {
         animation-direction: reverse;
@@ -32,7 +32,8 @@ export const HeroesList = styled.div`
     }
 `;
 
-export const HeroCard = styled.a`
+export const HeroCard = styled.div`
+    position: relative;
     background-image: ${props => `url(${props.backgroundImageUrl})`};
     min-width: 255px;
     width: 225px;
@@ -47,6 +48,6 @@ export const HeroCard = styled.a`
     background-repeat: no-repeat;
     overflow: hidden;
     position: relative;
-    z-index: 5;
+    z-index: 999;
     cursor: pointer;
 `;

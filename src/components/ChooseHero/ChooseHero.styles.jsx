@@ -37,11 +37,15 @@ export const HeroSectionTexts = styled.div`
 
 export const HeroesContainer = styled.div`
     width: 80%;
+    position: relative;
     overflow: hidden;
+`;
+
+export const HeroesListContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: 5rem 0;
-    mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 20%, #000 80%, transparent 100%);
 `;
 
 // .heading-tertiary {

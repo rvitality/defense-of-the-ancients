@@ -2,7 +2,11 @@ import React from "react";
 
 import { HeroesList as HeroesListSection, HeroCard } from "./HeroesList.styles";
 
-const HeroesList = ({ heroArr }) => {
+const HeroesList = ({ heroArr, onShowHeroModal }) => {
+    const clickHeroHandler = heroName => {
+        onShowHeroModal({ heroName, show: true });
+    };
+
     return (
         <HeroesListSection>
             {heroArr.map(hero => {
@@ -13,7 +17,7 @@ const HeroesList = ({ heroArr }) => {
 
                 return (
                     <HeroCard
-                        href="#q"
+                        onClick={clickHeroHandler.bind(null, hero.name)}
                         key={hero.id + 1}
                         backgroundImageUrl={backgroundImageUrl}
                     ></HeroCard>
@@ -28,7 +32,7 @@ const HeroesList = ({ heroArr }) => {
 
                 return (
                     <HeroCard
-                        href="#q"
+                        onClick={clickHeroHandler.bind(null, hero.name)}
                         key={hero.id + 2}
                         backgroundImageUrl={backgroundImageUrl}
                     ></HeroCard>
