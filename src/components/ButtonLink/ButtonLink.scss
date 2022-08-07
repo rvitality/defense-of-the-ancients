@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     transition: filter 0.25s ease-in-out;
-    box-shadow: 0 0 30px 0 #e13a42, 0.1rem 0.1rem 15px mix(black, #e13a42, 100%);
 
     &:hover {
         filter: brightness(110%);

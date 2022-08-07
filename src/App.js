@@ -1,8 +1,11 @@
 import React from "react";
+
+import Battle from "./components/Battle/Battle";
+import ChooseHero from "./components/ChooseHero/ChooseHero.component";
 import CalltoAction from "./components/CTA/CalltoAction";
 
 import Header from "./components/Header/Header";
-import Heroes from "./components/Heroes/Heroes";
+// import Heroes from "./components/Heroes/Heroes";
 import Landing from "./components/Landing/Landing";
 
 const App = () => {
@@ -24,6 +27,8 @@ const App = () => {
         <>
             <Header />
             <Landing />
+            <Battle />
+            <ChooseHero />
             {/* <Heroes /> */}
             <CalltoAction />
         </>

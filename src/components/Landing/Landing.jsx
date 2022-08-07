@@ -4,6 +4,7 @@ import ButtonLink from "../ButtonLink/ButtonLink";
 import landingSectionImage from "../../assets/images/juggernaut-hero-section-bg.jpg";
 
 import "./Landing.scss";
+import Fade from "../../UI/Fade/Fade";
 
 const Landing = () => {
     return (
@@ -11,11 +12,9 @@ const Landing = () => {
             <div className="landing__texts">
                 <h1 className="heading-primary">Defense of the Ancients</h1>
                 <p>
-                    Every day, millions of players worldwide enter the battle as one of over a
-                    hundred Dota landinges in a 5v5 team clash. Dota is the deepest multi-player
-                    action RTS game ever made and there's always a new strategy or tactic to
-                    discover. It's completely free to play and always will be – start defending your
-                    ancient now.
+                    Dear hero, you are not powerless. You are quite possibly full of powers. So will
+                    you do it? Will you march into almost certain death to battle the enemies?
+                    Surely that would be an adventure worthy of your storied name.
                 </p>
 
                 <ButtonLink
@@ -31,7 +30,7 @@ const Landing = () => {
                 <img src={landingSectionImage} alt="" />
             </div>
 
-            <div className="landing__bottom-fade"></div>
+            <Fade />
         </div>
     );
 };

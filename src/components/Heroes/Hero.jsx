@@ -20,7 +20,7 @@ const Hero = ({ heroData: hero }) => {
                 src={`https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/${heroImgSrc}.png`}
                 alt={heroName.toLowerCase()}
             />
-            <h3 className="heading-secondary">{heroName}</h3>
+            <h3 className="heading-tertiary">{heroName}</h3>
             <div>
                 <img
                     className="primary-attribute"
