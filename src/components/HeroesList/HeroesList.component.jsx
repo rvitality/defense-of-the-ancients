@@ -3,8 +3,8 @@ import React from "react";
 import { HeroesList as HeroesListSection, HeroCard } from "./HeroesList.styles";
 
 const HeroesList = ({ heroArr, onShowHeroModal }) => {
-    const clickHeroHandler = heroName => {
-        onShowHeroModal({ heroName, show: true });
+    const clickHeroHandler = heroData => {
+        onShowHeroModal({ name: heroData.name, attr: heroData.attr, show: true });
     };
 
     return (
@@ -17,7 +17,10 @@ const HeroesList = ({ heroArr, onShowHeroModal }) => {
 
                 return (
                     <HeroCard
-                        onClick={clickHeroHandler.bind(null, hero.name)}
+                        onClick={clickHeroHandler.bind(null, {
+                            name: hero.name,
+                            attr: hero.primary_attr,
+                        })}
                         key={hero.id + 1}
                         backgroundImageUrl={backgroundImageUrl}
                     ></HeroCard>
@@ -32,7 +35,10 @@ const HeroesList = ({ heroArr, onShowHeroModal }) => {
 
                 return (
                     <HeroCard
-                        onClick={clickHeroHandler.bind(null, hero.name)}
+                        onClick={clickHeroHandler.bind(null, {
+                            name: hero.name,
+                            attr: hero.primary_attr,
+                        })}
                         key={hero.id + 2}
                         backgroundImageUrl={backgroundImageUrl}
                     ></HeroCard>

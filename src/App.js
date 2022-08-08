@@ -9,19 +9,19 @@ import Header from "./components/Header/Header";
 import Landing from "./components/Landing/Landing";
 
 const App = () => {
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch(
-                "https://www.dota2.com/datafeed/herodata?language=english&hero_id=102"
-            );
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const response = await fetch(
+    //             "https://www.dota2.com/datafeed/herodata?language=english&hero_id=102"
+    //         );
 
-            const data = await response.json();
+    //         const data = await response.json();
 
-            console.log(data);
-        };
+    //         console.log(data);
+    //     };
 
-        fetchData();
-    }, []);
+    //     fetchData();
+    // }, []);
 
     return (
         <>

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import Fade from "../../UI/Fade/Fade";
 
-import heroesList from "../../hero-list.json";
+import heroesList from "../../dota-json/hero-list.json";
 
 import HeroModal from "../HeroModal/HeroModal.component";
 
@@ -15,7 +15,7 @@ import {
 import HeroesList from "../HeroesList/HeroesList.component";
 
 const ChooseHero = () => {
-    const [showHeroModal, setShowHeroModal] = useState({ name: "", show: false });
+    const [showHeroModal, setShowHeroModal] = useState({ name: "", attr: "", show: false });
 
     const heroes = useMemo(() => {
         const chunks = [];
@@ -46,15 +46,21 @@ const ChooseHero = () => {
             </HeroSectionTexts>
 
             <HeroesContainer>
-                {showHeroModal.show && <HeroModal name={showHeroModal.name} />}
+                {showHeroModal.show && (
+                    <HeroModal name={showHeroModal.name} attr={showHeroModal.attr} />
+                )}
 
                 <HeroesListContainer>
                     {heroes.map((heroArr, index) => {
                         return (
                             <HeroesList
                                 key={index}
-                                onShowHeroModal={data =>
-                                    setShowHeroModal({ name: data.heroName, show: data.show })
+                                onShowHeroModal={heroData =>
+                                    setShowHeroModal({
+                                        name: heroData.name,
+                                        attr: heroData.attr,
+                                        show: heroData.show,
+                                    })
                                 }
                                 heroArr={heroArr}
                             />
