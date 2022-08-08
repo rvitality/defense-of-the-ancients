@@ -1,14 +1,14 @@
 import React from "react";
 
-import { HeroesList as HeroesListSection, HeroCard } from "./HeroesList.styles";
+import { HeroesSlideItem, HeroCard } from "./HeroesSlide.styles";
 
-const HeroesList = ({ heroArr, onShowHeroModal }) => {
+const HeroesSlide = ({ heroArr, onShowHeroModal }) => {
     const clickHeroHandler = heroData => {
         onShowHeroModal({ name: heroData.name, attr: heroData.attr, show: true });
     };
 
     return (
-        <HeroesListSection>
+        <HeroesSlideItem>
             {heroArr.map(hero => {
                 const backgroundImageUrl = `https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/${hero.name.replace(
                     "npc_dota_hero_",
@@ -44,8 +44,8 @@ const HeroesList = ({ heroArr, onShowHeroModal }) => {
                     ></HeroCard>
                 );
             })}
-        </HeroesListSection>
+        </HeroesSlideItem>
     );
 };
 
-export default HeroesList;
+export default HeroesSlide;

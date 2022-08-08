@@ -15,6 +15,13 @@ export const HeroModalContainer = styled.div`
     padding: 1rem 0 1.3rem 0;
     flex-direction: column;
     transition: all 0.25s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+
+    &.show {
+        opacity: 1;
+        pointer-events: auto;
+    }
 `;
 
 const appear = keyframes`
@@ -153,4 +160,37 @@ export const ViewHeroLink = styled.a`
     padding: 0.5rem 1rem;
     margin-top: 1rem;
     font-size: 0.8rem;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+`;
+
+export const BtnCloseModal = styled.div`
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: trasparent;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    cursor: pointer;
+
+    .close-btn {
+        font-size: 2rem;
+        transform: rotate(45deg);
+        color: #ee4047;
+        transition: all 0.2s ease-in-out;
+        opacity: 0.8;
+
+        &:hover {
+            transform: rotate(135deg);
+            opacity: 1;
+        }
+    }
 `;

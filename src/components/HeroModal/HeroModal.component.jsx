@@ -13,9 +13,11 @@ import {
     ViewHeroLink,
     HeroName,
     HeroAttackType,
+    BtnCloseModal,
 } from "./HeroModal.styles";
 
-const HeroModal = ({ name = "", attr = 0 }) => {
+const HeroModal = ({ name = "", attr = 0, show = false, onCloseModal }) => {
+    console.log(name);
     const heroNameRaw = name;
     const heroName = name.replace("npc_dota_hero_", "").replaceAll("_", " ");
     const heroImgSrc = name.replace("npc_dota_hero_", "");
@@ -54,7 +56,7 @@ const HeroModal = ({ name = "", attr = 0 }) => {
     }
 
     return (
-        <HeroModalContainer>
+        <HeroModalContainer className={show ? "show" : ""}>
             <Modal>
                 {!isLoaded && <Spinner style={{ marginTop: "2rem" }} />}
                 <img
@@ -74,7 +76,10 @@ const HeroModal = ({ name = "", attr = 0 }) => {
                             />
                             <h4 className="hero-name">{heroName}</h4>
                         </HeroName>
-                        {/* <span className="close-btn">+</span> */}
+
+                        <BtnCloseModal onClick={onCloseModal}>
+                            <span className="close-btn">+</span>
+                        </BtnCloseModal>
 
                         {attackType && (
                             <HeroAttackType>

@@ -1,18 +1,18 @@
 import React, { useMemo, useState } from "react";
-import Fade from "../../UI/Fade/Fade";
 
 import heroesList from "../../dota-json/hero-list.json";
 
+import HeroesSlide from "../HeroesSlide/HeroesSlide.component";
 import HeroModal from "../HeroModal/HeroModal.component";
+import Fade from "../../UI/Fade/Fade";
 
 import {
-    HeroSection,
-    HeroSectionTexts,
+    ChooseHeroSection,
+    ChooseHeroSectionTexts,
     HeroesContainer,
     HeroesListContainer,
+    ViewAllHeroesLink,
 } from "./ChooseHero.styles";
-
-import HeroesList from "../HeroesList/HeroesList.component";
 
 const ChooseHero = () => {
     const [showHeroModal, setShowHeroModal] = useState({ name: "", attr: "", show: false });
@@ -31,10 +31,10 @@ const ChooseHero = () => {
     }, []);
 
     return (
-        <HeroSection>
+        <ChooseHeroSection>
             <Fade top={true} style={{ height: "50vh" }} />
 
-            <HeroSectionTexts>
+            <ChooseHeroSectionTexts>
                 <h3 className="heading-tertiary">Who will you</h3>
                 <h2 className="heading-primary heading-primary--large">Choose?</h2>
                 <p>
@@ -43,17 +43,22 @@ const ChooseHero = () => {
                     ultimates on your way to victory.
                 </p>
                 <Fade />
-            </HeroSectionTexts>
+            </ChooseHeroSectionTexts>
 
             <HeroesContainer>
                 {showHeroModal.show && (
-                    <HeroModal name={showHeroModal.name} attr={showHeroModal.attr} />
+                    <HeroModal
+                        onCloseModal={() => {
+                            setShowHeroModal(prevState => ({ ...prevState, show: false }));
+                        }}
+                        {...showHeroModal}
+                    />
                 )}
 
                 <HeroesListContainer>
                     {heroes.map((heroArr, index) => {
                         return (
-                            <HeroesList
+                            <HeroesSlide
                                 key={index}
                                 onShowHeroModal={heroData =>
                                     setShowHeroModal({
@@ -69,8 +74,10 @@ const ChooseHero = () => {
                 </HeroesListContainer>
             </HeroesContainer>
 
+            <ViewAllHeroesLink href="https://www.dota2.com/news">View All Heroes</ViewAllHeroesLink>
+
             <Fade />
-        </HeroSection>
+        </ChooseHeroSection>
     );
 };
 
