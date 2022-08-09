@@ -39,10 +39,7 @@ export const HeroCard = styled.div`
     width: 225px;
     height: 127px;
     margin-right: 10px;
-    // box-shadow: 1px 1px 4px #000;
-    // transition-property: transform, box-shadow, background-size, opacity, top, left;
-    // transition-timing-function: ease-out;
-    // transition-duration: 0.2s;
+
     background-position: center;
     background-size: 110%;
     background-repeat: no-repeat;
@@ -51,4 +48,9 @@ export const HeroCard = styled.div`
     z-index: 999;
     cursor: pointer;
     box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.8);
+
+    // box-shadow: 1px 1px 4px #000;
+    // transition-property: transform, box-shadow, background-size, opacity, top, left;
+    // transition-timing-function: ease-out;
+    // transition-duration: 0.2s;
 `;

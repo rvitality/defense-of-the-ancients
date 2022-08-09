@@ -56,13 +56,15 @@ const Footer = () => {
                         url={
                             "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/footer_logo.png"
                         }
-                        href="#"
+                        target="_blank"
+                        href="https://www.dota2.com/"
                     />
                     <FooterLogo
                         url={
                             "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/valve_logo.png"
                         }
-                        href="#"
+                        target="_blank"
+                        href="https://www.valvesoftware.com/en/"
                     />
                 </FooterLogoContainer>
                 <Copyright>

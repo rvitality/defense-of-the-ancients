@@ -7,7 +7,7 @@ import { ProCircuitSection, ProCircuitTexts, AegiesIcon } from "./ProCircuit.sty
 
 const ProCircuit = () => {
     return (
-        <ProCircuitSection>
+        <ProCircuitSection id="pro-circuit">
             <Fade top={true} />
 
             <ProCircuitTexts>

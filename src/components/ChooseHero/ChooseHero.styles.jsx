@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 import chooseHeroBgImage from "../../assets/images/choose-hero-section-bg.jpg";
 
 export const ChooseHeroSection = styled.div`
@@ -50,7 +52,7 @@ export const HeroesListContainer = styled.div`
     mask-image: linear-gradient(to right, transparent 0%, #000 20%, #000 80%, transparent 100%);
 `;
 
-export const ViewAllHeroesLink = styled.a`
+export const ViewAllHeroesLink = styled(Link)`
     align-self: center;
     margin: 3rem 0 ;
     border-radius: 0;

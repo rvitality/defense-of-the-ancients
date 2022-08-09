@@ -31,7 +31,7 @@ const ChooseHero = () => {
     }, []);
 
     return (
-        <ChooseHeroSection>
+        <ChooseHeroSection id="heroes">
             <Fade top={true} style={{ height: "50vh" }} />
 
             <ChooseHeroSectionTexts>
@@ -74,7 +74,7 @@ const ChooseHero = () => {
                 </HeroesListContainer>
             </HeroesContainer>
 
-            <ViewAllHeroesLink href="https://www.dota2.com/news">View All Heroes</ViewAllHeroesLink>
+            <ViewAllHeroesLink to="heroes">View All Heroes</ViewAllHeroesLink>
 
             <Fade />
         </ChooseHeroSection>

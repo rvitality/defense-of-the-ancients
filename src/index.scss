@@ -33,6 +33,7 @@
 // }
 
 html {
+    scroll-behavior: smooth;
     font-size: 100%;
 
     @include respond(tab-land) {
@@ -58,6 +59,10 @@ body {
 
 p {
     font-size: 1.18rem;
+}
+
+input {
+    font-family: inherit;
 }
 
 ul li {

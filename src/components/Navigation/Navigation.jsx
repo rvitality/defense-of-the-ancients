@@ -7,13 +7,13 @@ const Navigation = () => {
         <nav className="nav">
             <ul>
                 <li>
-                    <a href="#news">News</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
                     <a href="#heroes">Heroes</a>
                 </li>
                 <li>
-                    <a href="#download">Download</a>
+                    <a href="#pro-circuit">Pro Circuit</a>
                 </li>
             </ul>
         </nav>

@@ -6,7 +6,7 @@ import { BattleSection, BattleSectionTexts, VideoContainer } from "./Battle.styl
 
 const Battle = () => {
     return (
-        <BattleSection>
+        <BattleSection id="about">
             <Fade top={true} />
 
             <BattleSectionTexts>
