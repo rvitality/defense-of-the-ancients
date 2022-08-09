@@ -68,6 +68,14 @@ export const Attribute = styled.div`
     cursor: pointer;
 
     &:hover {
+        // filter: brightness(1) saturate(1);
+    }
+`;
+
+export const ComplexityContainer = styled(AttributeContainer)``;
+
+export const Complexity = styled(Attribute)`
+    &.selected {
         filter: brightness(1) saturate(1);
     }
 `;
@@ -148,7 +156,11 @@ export const HeroLink = styled(Link)`
     background-repeat: no-repeat;
     cursor: pointer;
     box-shadow: 0 1px 1px 1px #000, inset 0 0 1rem rgba(0, 0, 0, 0.8);
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    &.no-match {
+        filter: brightness(0.25);
+    }
 
     &:hover {
         transform: scale(1.1);
