@@ -1,28 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-import Battle from "./components/Battle/Battle";
+import Battle from "./components/Battle/Battle.component";
 import ChooseHero from "./components/ChooseHero/ChooseHero.component";
-import CalltoAction from "./components/CTA/CalltoAction";
+import ProCircuit from "./components/ProCircuit/ProCircuit.component";
 
 import Header from "./components/Header/Header";
 // import Heroes from "./components/Heroes/Heroes";
 import Landing from "./components/Landing/Landing";
+import Footer from "./components/Footer/Footer.component";
 
 const App = () => {
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         const response = await fetch(
-    //             "https://www.dota2.com/datafeed/herodata?language=english&hero_id=102"
-    //         );
-
-    //         const data = await response.json();
-
-    //         console.log(data);
-    //     };
-
-    //     fetchData();
-    // }, []);
-
     return (
         <>
             <Header />
@@ -30,7 +17,8 @@ const App = () => {
             <Battle />
             <ChooseHero />
             {/* <Heroes /> */}
-            <CalltoAction />
+            <ProCircuit />
+            <Footer />
         </>
     );
 };

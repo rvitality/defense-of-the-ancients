@@ -1,15 +1,15 @@
 import React from "react";
 import Fade from "../../UI/Fade/Fade";
-import ButtonLink from "../ButtonLink/ButtonLink";
+import ButtonLink from "../ButtonLink/ButtonLink.component";
 
-import "./Battle.scss";
+import { BattleSection, BattleSectionTexts, VideoContainer } from "./Battle.styles.jsx";
 
 const Battle = () => {
     return (
-        <div className="battle-section">
+        <BattleSection>
             <Fade top={true} />
 
-            <div className="battle-section__texts">
+            <BattleSectionTexts>
                 <h3 className="heading-tertiary">Join The</h3>
                 <h2 className="heading-primary heading-primary--large">Batte of the Ancients</h2>
                 <p>
@@ -20,9 +20,9 @@ const Battle = () => {
                     ancient now.
                 </p>
                 <ButtonLink url="https://www.dota2.com/news" title="See What's New!" />
-            </div>
+            </BattleSectionTexts>
 
-            <div className="video-container">
+            <VideoContainer>
                 <video preload="auto" autoPlay loop muted>
                     <source
                         type="video/webm"
@@ -34,10 +34,10 @@ const Battle = () => {
                     />
                 </video>
                 <Fade />
-            </div>
+            </VideoContainer>
 
             <Fade />
-        </div>
+        </BattleSection>
     );
 };
 

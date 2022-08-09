@@ -1,6 +1,6 @@
 import React from "react";
 
-import ButtonLink from "../ButtonLink/ButtonLink";
+import ButtonLink from "../ButtonLink/ButtonLink.component";
 import landingSectionImage from "../../assets/images/juggernaut-hero-section-bg.jpg";
 
 import "./Landing.scss";

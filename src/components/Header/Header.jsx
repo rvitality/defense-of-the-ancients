@@ -1,6 +1,6 @@
 import React from "react";
 
-import ButtonLink from "../ButtonLink/ButtonLink";
+import ButtonLink from "../ButtonLink/ButtonLink.component";
 import Navigation from "../Navigation/Navigation";
 import Logo from "../Logo/Logo";
 

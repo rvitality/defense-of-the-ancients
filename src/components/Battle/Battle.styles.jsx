@@ -1,4 +1,6 @@
-.battle-section {
+import styled from "styled-components";
+
+export const BattleSection = styled.div`
     height: 125vh;
     position: relative;
     display: flex;
@@ -7,27 +9,27 @@
     position: relative;
     overflow: hidden;
 
-    .video-container {
-        height: 70%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            top: 0;
-            left: 0;
-        }
-    }
-
     .button-link {
         margin-top: 2rem;
     }
-}
+`;
 
-.battle-section__texts {
+export const VideoContainer = styled.div`
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+`;
+
+export const BattleSectionTexts = styled.div`
     z-index: 1;
     text-align: center;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
@@ -45,4 +47,4 @@
         max-width: 70%;
         margin-top: 1rem;
     }
-}
+`;
