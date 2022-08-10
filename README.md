@@ -6,4 +6,4 @@ Every day, millions of players worldwide enter the battle as one of over a hundr
 
 -   [Dota 2](https://www.dota2.com/home) Official Page
 -   [Design Inspiration](https://dribbble.com/shots/16924353-CODA-Landing-Page-Exploration/)
--   [Data Reference](https://github.com/kronusme/dota2-api)
+-   [Data Reference](https://github.com/kronusme/dota2-api) (Patch 7.07d)

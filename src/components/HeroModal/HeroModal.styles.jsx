@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 
 export const HeroModalContainer = styled.div`
@@ -155,7 +156,7 @@ export const AbilityContainer = styled.div`
     }
 `;
 
-export const ViewHeroLink = styled.a`
+export const ViewHeroLink = styled(Link)`
     border: 1px solid #fff;
     padding: 0.5rem 1rem;
     margin-top: 1rem;

@@ -108,7 +108,9 @@ const HeroModal = ({ name = "", attr = 0, show = false, onCloseModal }) => {
                 </div>
             </Modal>
 
-            <ViewHeroLink href="#">View Hero</ViewHeroLink>
+            <ViewHeroLink to={`heroes/${name.replace("npc_dota_hero_", "")}`}>
+                View Hero
+            </ViewHeroLink>
         </HeroModalContainer>
     );
 };
