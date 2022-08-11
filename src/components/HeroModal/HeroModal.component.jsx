@@ -17,7 +17,6 @@ import {
 } from "./HeroModal.styles";
 
 const HeroModal = ({ name = "", attr = 0, show = false, onCloseModal }) => {
-    console.log(name);
     const heroNameRaw = name;
     const heroName = name.replace("npc_dota_hero_", "").replaceAll("_", " ");
     const heroImgSrc = name.replace("npc_dota_hero_", "");

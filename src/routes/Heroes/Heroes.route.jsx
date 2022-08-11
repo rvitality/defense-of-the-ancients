@@ -9,8 +9,6 @@ import HeroesBlock from "./HeroesBlock/HeroesBlock.component";
 import {
     HeroesContainer,
     FilterBlock,
-    AttributeContainer,
-    Attribute,
     SearchHeroForm,
     ComplexityContainer,
     Complexity,

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterSection = styled.div`
+export const FooterSection = styled.footer`
     position: relative;
     padding: 3rem 5rem;
     display: flex;
@@ -9,6 +9,8 @@ export const FooterSection = styled.div`
     display: flex;
     justify-content: center;
     gap: 10vw;
+    z-index: 9;
+    background: #000;
 `;
 
 export const FooterNav = styled.div`
