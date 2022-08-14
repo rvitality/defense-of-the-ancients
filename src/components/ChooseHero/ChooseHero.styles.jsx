@@ -35,6 +35,14 @@ export const ChooseHeroSectionTexts = styled.div`
         max-width: 70%;
         text-align: center;
     }
+
+    @media only screen and (max-width: 26.6em) {
+        padding: 5rem 2.5rem;
+
+        p {
+            max-width: 100%;
+        }
+    } // 425px
 `;
 
 export const HeroesContainer = styled.div`
@@ -43,6 +51,10 @@ export const HeroesContainer = styled.div`
     overflow: hidden;
     margin-top: -20vh;
     z-index: 9;
+
+    @media only screen and (max-width: 26.6em) {
+        width: 90%;
+    } // 425px
 `;
 
 export const HeroesListContainer = styled.div`
@@ -67,5 +79,10 @@ export const ViewAllHeroesLink = styled(Link)`
         background: #fff;
         color: #000;
     }
+
+
+    @media only screen and (max-width: 56.25em) {
+        font-size: 1.35rem;
+    } //900px
 }
 `;

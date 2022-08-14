@@ -17,7 +17,7 @@ export const ProCircuitSection = styled.div`
     // box-shadow: inset 0 0 50rem #000;
     position: relative;
 
-    padding-bottom: 100px;
+    padding-bottom: 6rem;
     background-position: top;
     background-size: 2000px;
 
@@ -25,6 +25,16 @@ export const ProCircuitSection = styled.div`
         margin-top: 1rem;
         color: #ccc;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        min-height: 90vh;
+    } //900px
+
+    @media only screen and (max-width: 26.6em) {
+        min-height: 70vh;
+
+        background-position-y: 80%;
+    } // 425px
 `;
 
 export const ProCircuitTexts = styled.div`
@@ -44,6 +54,12 @@ export const ProCircuitTexts = styled.div`
     p {
         margin-top: 1rem;
     }
+
+    @media only screen and (max-width: 26.6em) {
+        margin-top: 30rem;
+        max-width: 100%;
+        padding: 2.5rem;
+    } // 425px
 `;
 
 export const AegiesIcon = styled.div`

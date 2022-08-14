@@ -11,11 +11,14 @@ export const FooterSection = styled.footer`
     gap: 10vw;
     z-index: 9;
     background: #000;
+
+    @media only screen and (max-width: 26.6em) {
+        flex-direction: column;
+        padding: 2.5rem;
+    } // 425px
 `;
 
 export const FooterNav = styled.div`
-    // width: 50%;
-
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -39,10 +42,34 @@ export const FooterNav = styled.div`
             color: #fff;
         }
     }
+
+    @media only screen and (max-width: 56.25em) {
+        ul li a {
+            font-size: 1.3rem;
+        }
+
+        ul li:first-of-type a {
+            font-size: 1.7rem;
+        }
+    } //900px
+
+    @media only screen and (max-width: 26.6em) {
+        ul li a {
+            font-size: 1.5rem;
+        }
+
+        ul li:first-of-type a {
+            font-size: 2rem;
+        }
+    } // 425px
 `;
 
 export const CopyrightLogoContainer = styled.div`
     width: 40%;
+
+    @media only screen and (max-width: 26.6em) {
+        width: 100%;
+    } // 425px
 `;
 
 export const FooterLogoContainer = styled.div`
@@ -78,4 +105,10 @@ export const Copyright = styled.div`
         font-size: 0.8rem;
         color: #777;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        p {
+            font-size: 1.1rem;
+        }
+    } //900px
 `;

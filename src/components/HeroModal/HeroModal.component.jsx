@@ -56,6 +56,9 @@ const HeroModal = ({ name = "", attr = 0, show = false, onCloseModal }) => {
 
     return (
         <HeroModalContainer className={show ? "show" : ""}>
+            <BtnCloseModal onClick={onCloseModal}>
+                <span className="close-btn">+</span>
+            </BtnCloseModal>
             <Modal>
                 {!isLoaded && <Spinner style={{ marginTop: "2rem" }} />}
                 <img
@@ -75,10 +78,6 @@ const HeroModal = ({ name = "", attr = 0, show = false, onCloseModal }) => {
                             />
                             <h4 className="hero-name">{heroName}</h4>
                         </HeroName>
-
-                        <BtnCloseModal onClick={onCloseModal}>
-                            <span className="close-btn">+</span>
-                        </BtnCloseModal>
 
                         {attackType && (
                             <HeroAttackType>

@@ -30,6 +30,10 @@ export const HeroesSlideItem = styled.div`
     div img {
         height: 100%;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        height: 118px;
+    } //600px
 `;
 
 export const HeroCard = styled.div`
@@ -53,4 +57,10 @@ export const HeroCard = styled.div`
     // transition-property: transform, box-shadow, background-size, opacity, top, left;
     // transition-timing-function: ease-out;
     // transition-duration: 0.2s;
+
+    @media only screen and (max-width: 37.5em) {
+        min-width: 185px;
+        width: 175px;
+        height: 107px;
+    } //600px
 `;

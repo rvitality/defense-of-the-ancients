@@ -4,7 +4,6 @@ import styled, { keyframes } from "styled-components";
 export const HeroModalContainer = styled.div`
     position: absolute;
     z-index: 9;
-    // height: 50%;
     width: 40%;
     left: 50%;
     top: 50%;
@@ -23,6 +22,14 @@ export const HeroModalContainer = styled.div`
         opacity: 1;
         pointer-events: auto;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        width: 60%;
+    } //900px
+
+    @media only screen and (max-width: 26.6em) {
+        width: 70%;
+    } // 425px
 `;
 
 const appear = keyframes`
@@ -37,7 +44,6 @@ const appear = keyframes`
 export const Modal = styled.div`
     min-height: 350px;
     width: 70%;
-    // height: 80%;
     background: #000;
     border-radius: 1rem;
     text-align: center;
@@ -65,6 +71,18 @@ export const Modal = styled.div`
         font-size: 1.7rem;
         text-transform: capitalize;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        width: 80%;
+
+        .hero-name {
+            font-size: 2.5rem;
+        }
+    } //900px
+
+    @media only screen and (max-width: 26.6em) {
+        min-height: 100%;
+    } // 425px
 `;
 
 export const HeroNameContainer = styled.div`
@@ -86,6 +104,12 @@ export const HeroName = styled.div`
     img {
         width: 1.8rem;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        img {
+            width: 2.8rem;
+        }
+    } //900px
 `;
 
 export const HeroAttackType = styled(HeroName)`
@@ -101,6 +125,16 @@ export const HeroAttackType = styled(HeroName)`
         font-size: 0.95rem;
         letter-spacing: 0.1rem;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        img {
+            width: 20%;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    } //900px
 `;
 
 export const HeroAbilities = styled.div`
@@ -154,6 +188,11 @@ export const AbilityContainer = styled.div`
             opacity: 1;
         }
     }
+
+    @media only screen and (max-width: 56.25em) {
+        height: 4rem;
+        width: 4rem;
+    } //900px
 `;
 
 export const ViewHeroLink = styled(Link)`
@@ -167,6 +206,10 @@ export const ViewHeroLink = styled(Link)`
         background: #fff;
         color: #000;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        font-size: 1.25rem;
+    } //900px
 `;
 
 export const BtnCloseModal = styled.div`
@@ -194,4 +237,10 @@ export const BtnCloseModal = styled.div`
             opacity: 1;
         }
     }
+
+    @media only screen and (max-width: 56.25em) {
+        .close-btn {
+            font-size: 3rem;
+        }
+    } //900px
 `;

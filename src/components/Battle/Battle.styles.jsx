@@ -12,6 +12,10 @@ export const BattleSection = styled.div`
     .button-link {
         margin-top: 2rem;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        height: 90vh;
+    } //600px
 `;
 
 export const VideoContainer = styled.div`
@@ -47,4 +51,12 @@ export const BattleSectionTexts = styled.div`
         max-width: 70%;
         margin-top: 1rem;
     }
+
+    @media only screen and (max-width: 26.6em) {
+        padding: 5rem 2.5rem;
+
+        p {
+            max-width: 100%;
+        }
+    } // 425px
 `;

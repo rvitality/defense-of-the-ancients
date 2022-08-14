@@ -16,4 +16,16 @@ export const LogoLink = styled(Link)`
     &:hover {
         filter: brightness(100%);
     }
+
+    @media only screen and (max-width: 56.25em) {
+        width: 12rem;
+    } //900px
+
+    @media only screen and (max-width: 26.6em) {
+        width: 14rem;
+    } // 425px
+
+    @media only screen and (max-width: 23.44em) {
+        width: 16rem;
+    } // 375px
 `;

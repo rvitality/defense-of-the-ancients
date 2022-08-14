@@ -59,6 +59,10 @@ body {
 
 p {
     font-size: 1.18rem;
+
+    @include respond(tab-port) {
+        font-size: 1.35rem;
+    }
 }
 
 input {
