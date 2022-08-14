@@ -13,11 +13,16 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 48em) {
+        height: auto;
+    } //768px
 `;
 
 export const Hero = styled(Link)`
     width: 42%;
-    height: 150px;
+    // height: 150px;
+    height: 10rem;
     position: relative;
     padding: 0px 30px;
     display: flex;
@@ -50,7 +55,8 @@ export const Hero = styled(Link)`
     .hero-portrait {
         position: absolute;
         bottom: -20px;
-        width: 400px;
+        // width: 400px;
+        width: 26rem;
         right: 0px;
         transition-duration: 0.3s;
         z-index: 1;
@@ -65,7 +71,7 @@ export const Hero = styled(Link)`
     }
 
     .top-header {
-        font-size: 15px;
+        font-size: 1.15rem;
         color: #9f9f9f;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -74,7 +80,7 @@ export const Hero = styled(Link)`
     }
 
     .hero-name {
-        font-size: 28px;
+        font-size: 2rem;
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -92,19 +98,43 @@ export const Hero = styled(Link)`
     }
 
     .primary-attribute {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
+        width: 1.35rem;
+        height: 1.35rem;
+        margin-right: 0.8rem;
         filter: drop-shadow(1px 1px 4px black);
     }
 
     .attack-type {
         color: #ddd;
-        font-size: 15px;
+        font-size: 1rem;
         text-transform: uppercase;
         letter-spacing: 2px;
         text-shadow: 1px 1px 4px #000;
     }
+
+    @media only screen and (max-width: 48em) {
+        .hero-labels {
+            padding: 1rem 1.5rem;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+    } //768px
+
+    @media only screen and (max-width: 37.5em) {
+        width: 38%;
+
+        .top-header {
+            display: none;
+        }
+
+        .hero-details {
+            // display: none;
+        }
+    } //600px
+
+    @media only screen and (max-width: 26.6em) {
+        min-width: 50%;
+    } // 425px
 `;
 
 export const ViewAllHeroesLink = styled(Link)`
@@ -120,4 +150,15 @@ export const ViewAllHeroesLink = styled(Link)`
         background: #fff;
         color: #000;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        font-size: 1.8rem;
+    } //900px
+
+    @media only screen and (max-width: 26.6em) {
+        position: absolute;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } // 425px
 `;

@@ -32,18 +32,50 @@ export const HeroesGroup = styled.div`
         font-family: "Philosopher", sans-serif;
         letter-spacing: 0.4rem;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        .secondary-heading {
+            font-size: 2rem;
+            left: -20px;
+        }
+    } //600px
+
+    @media only screen and (max-width: 26.6em) {
+        flex-direction: column;
+
+        .secondary-heading {
+            position: relative;
+            transform: rotate(0);
+            left: unset;
+            top: unset;
+            margin: 1.5rem 0 4rem 0;
+        }
+    } // 425px
 `;
 
 export const HeroesGroupGrid = styled.div`
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: flex-start;
     gap: 0.5rem;
 
     width: 100%;
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-auto-columns: auto;
+
+    @media only screen and (max-width: 56.25em) {
+        grid-template-columns: repeat(8, 1fr);
+    } //900px
+
+    @media only screen and (max-width: 37.5em) {
+        grid-template-columns: repeat(5, 1fr);
+    } //600px
+
+    @media only screen and (max-width: 26.6em) {
+        grid-template-columns: repeat(4, 1fr);
+    } // 425px
+
+    @media only screen and (max-width: 23.44em) {
+        grid-template-columns: repeat(3, 1fr);
+    } // 375px
 `;
 
 export const HeroName = styled.span`
@@ -61,6 +93,10 @@ export const HeroName = styled.span`
     bottom: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: 37.5em) {
+        font-size: 2rem;
+    } //600px
 `;
 
 export const HeroLink = styled(Link)`
@@ -68,13 +104,8 @@ export const HeroLink = styled(Link)`
     display: inline-flex;
     background-image: ${props => `url(${props.bgimageurl})`};
 
-    // min-width: 255px;
-    // width: 225px;
-    // height: 127px;
-
     background-size: cover;
 
-    // width: 84px;
     height: 98px;
 
     background-position: center;
@@ -95,4 +126,8 @@ export const HeroLink = styled(Link)`
             opacity: 1;
         }
     }
+
+    @media only screen and (max-width: 26.6em) {
+        height: 80px;
+    } // 425px
 `;

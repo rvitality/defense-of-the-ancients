@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { Link } from "react-router-dom";
-
 export const HeroesContainer = styled.div`
     margin-top: -15vh;
     padding: 20vh 5rem 1rem 5rem;
@@ -17,6 +15,14 @@ export const HeroesContainer = styled.div`
         margin: 1rem auto;
         max-width: 70%;
     }
+
+    @media only screen and (max-width: 26.6em) {
+        padding: 20vh 2.5rem 1rem 2.5rem;
+
+        .heading-p {
+            max-width: 100%;
+        }
+    } // 425px
 `;
 
 export const FilterBlock = styled.div`
@@ -37,6 +43,24 @@ export const FilterBlock = styled.div`
         font-size: 1.35rem;
         letter-spacing: 1px;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        .filter-heading {
+            font-size: 1.6rem;
+        }
+    } //600px
+
+    @media only screen and (max-width: 26.6em) {
+        gap: 3rem;
+
+        .filter-heading {
+            display: none;
+        }
+    } // 425px
+
+    @media only screen and (max-width: 20.31em) {
+        gap: 0.8rem;
+    } //325px
 `;
 
 export const AttributeContainer = styled.div`
@@ -50,6 +74,12 @@ export const AttributeContainer = styled.div`
         letter-spacing: 2px;
         margin-right: 1.25rem;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        .attribute-word {
+            font-size: 1.15rem;
+        }
+    } //600px
 `;
 
 export const Attribute = styled.div`
@@ -67,9 +97,15 @@ export const Attribute = styled.div`
     filter: brightness(0.5) saturate(0);
     cursor: pointer;
 
-    &:hover {
-        // filter: brightness(1) saturate(1);
-    }
+    @media only screen and (max-width: 37.5em) {
+        width: 30px;
+        height: 22px;
+    } //600px
+
+    @media only screen and (max-width: 20.31em) {
+        width: 24px;
+        height: 20px;
+    } //325px
 `;
 
 export const ComplexityContainer = styled(AttributeContainer)``;
@@ -109,14 +145,25 @@ export const SearchHeroForm = styled.form`
         font-size: 1rem;
     }
 
-    svg {
-        width: 26px;
-        height: 26px;
-        min-width: 26px;
-        min-height: 26px;
-        margin-right: 10px;
-        margin-left: 10px;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+    @media only screen and (max-width: 56.25em) {
+        input {
+            font-size: 1.8rem;
+        }
+    } //900px
+
+    @media only screen and (max-width: 37.5em) {
+        width: 35%;
+
+        img {
+            width: 10%;
+        }
+    } //600px
+
+    @media only screen and (max-width: 26.6em) {
+        width: 100%;
+
+        img {
+            width: 15%;
+        }
+    } // 425px
 `;

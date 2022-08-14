@@ -12,6 +12,16 @@ export const Container = styled.div`
     justify-content: space-evenly;
     padding: 20px 0px;
     z-index: 2;
+
+    @media only screen and (max-width: 37.5em) {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    } //600px
+
+    @media only screen and (max-width: 26.6em) {
+        padding: 2.5rem;
+    } // 425px
 `;
 
 export const VerticalSeparator = styled.div`
@@ -27,6 +37,14 @@ export const VerticalSeparator = styled.div`
         height: 80%;
         background-color: #4f4f4f;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        transform: rotate(90deg);
+        height: 10vh;
+        &:after {
+            height: 20rem;
+        }
+    } //600px
 `;
 
 export const StatsHeader = styled.div`
@@ -36,6 +54,10 @@ export const StatsHeader = styled.div`
     letter-spacing: 2px;
     text-shadow: 1px 1px 2px #000;
     margin-top: 1.2rem;
+
+    @media only screen and (max-width: 37.5em) {
+        font-size: 2rem;
+    } //600px
 `;
 
 export const DetailsAttributes = styled.div`
@@ -93,6 +115,15 @@ export const Portrait = styled.div`
     .mana-gain {
         color: #1056db;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        .bar {
+            font-size: 1.6rem;
+        }
+        .gain {
+            font-size: 1.25rem;
+        }
+    } //600px
 `;
 
 export const Attributes = styled.div`
@@ -177,7 +208,7 @@ export const DetailsStats = styled.div`
         flex-direction: row;
         align-items: center;
         margin-top: 6px;
-        font-size: 16px;
+        font-size: 1.15rem;
         text-align: left;
     }
 
@@ -186,4 +217,12 @@ export const DetailsStats = styled.div`
         height: 24px;
         margin-right: 8px;
     }
+
+    @media only screen and (max-width: 26.6em) {
+        min-width: 100%;
+
+        .value-element {
+            font-size: 1.55rem;
+        }
+    } // 425px
 `;

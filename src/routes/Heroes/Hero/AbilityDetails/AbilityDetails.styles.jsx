@@ -10,6 +10,15 @@ export const Container = styled.div`
     }
 
     padding: 2rem 0 4rem 0;
+
+    @media only screen and (max-width: 37.5em) {
+        padding-bottom: 10rem;
+
+        h2 {
+            margin: 2rem 2rem 4rem 2rem;
+            font-size: 2.25rem;
+        }
+    } //600px
 `;
 
 export const Abilities = styled.div`
@@ -30,6 +39,11 @@ export const Abilities = styled.div`
         font-size: 14px;
         color: #aaa;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        flex-direction: column;
+        gap: 3rem;
+    } //600px
 `;
 
 export const AbilityLeft = styled.div`
@@ -82,6 +96,17 @@ export const AbilityLeft = styled.div`
             filter: saturate(1) brightness(1);
         }
     }
+
+    @media only screen and (max-width: 37.5em) {
+        width: 100%;
+    } //600px
+
+    @media only screen and (max-width: 26.6em) {
+        .ability-selectable {
+            width: 60px;
+            height: 60px;
+        }
+    } // 425px
 `;
 
 export const AbilityRight = styled.div`
@@ -95,6 +120,10 @@ export const AbilityRight = styled.div`
         width: 100%;
         height: 100%;
     }
+
+    @media only screen and (max-width: 37.5em) {
+        width: 100%;
+    } //600px
 `;
 
 export const AbilityMainInfo = styled.div`
@@ -136,6 +165,12 @@ export const AbilityMainInfo = styled.div`
         white-space: pre-wrap;
         margin-bottom: 10px;
     }
+
+    @media only screen and (max-width: 56.25em) {
+        .ability-desc {
+            font-size: 1.3rem;
+        }
+    } //900px
 `;
 
 export const AbilitySpecificDetails = styled.div`
@@ -169,7 +204,7 @@ export const AbilitySpecificDetails = styled.div`
     }
 
     .value-element {
-        font-size: 14px;
+        font-size: 1.3rem;
         color: #737373;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -196,6 +231,8 @@ export const AbilitySpecificDetails = styled.div`
 
         }
     }
+
+    } // 425px
 }
 
 .specific-values {
