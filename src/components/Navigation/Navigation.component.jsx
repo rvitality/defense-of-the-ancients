@@ -1,24 +1,22 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
-import "./Navigation.scss";
+import { Nav, NavLink } from "./Navigation.styles.jsx";
 
 const Navigation = () => {
     return (
-        <nav className="nav">
+        <Nav>
             <ul>
                 <li>
-                    <Link to="">News</Link>
+                    <NavLink to="">News</NavLink>
                 </li>
                 <li>
-                    <Link to="heroes">Heroes</Link>
+                    <NavLink to="heroes">Heroes</NavLink>
                 </li>
                 <li>
-                    <Link to="">About</Link>
+                    <NavLink to="">About</NavLink>
                 </li>
             </ul>
-        </nav>
+        </Nav>
     );
 };
 

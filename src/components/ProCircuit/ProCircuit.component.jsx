@@ -1,7 +1,7 @@
 import React from "react";
 
 // import ButtonLink from "../ButtonLink/ButtonLink.component";
-import Fade from "../../UI/Fade/Fade";
+import Fade from "../../UI/Fade/Fade.component";
 
 import { ProCircuitSection, ProCircuitTexts, AegiesIcon } from "./ProCircuit.styles.jsx";
 

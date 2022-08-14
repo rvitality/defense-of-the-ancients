@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "../../UI/Fade/Fade";
+import Fade from "../../UI/Fade/Fade.component";
 import ButtonLink from "../ButtonLink/ButtonLink.component";
 
 import { BattleSection, BattleSectionTexts, VideoContainer } from "./Battle.styles.jsx";

@@ -4,7 +4,7 @@ import heroesList from "../../dota-json/hero-list.json";
 
 import HeroesSlide from "../HeroesSlide/HeroesSlide.component";
 import HeroModal from "../HeroModal/HeroModal.component";
-import Fade from "../../UI/Fade/Fade";
+import Fade from "../../UI/Fade/Fade.component";
 
 import {
     ChooseHeroSection,

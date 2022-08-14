@@ -1,15 +1,16 @@
 import React from "react";
 
 import ButtonLink from "../ButtonLink/ButtonLink.component";
+import Fade from "../../UI/Fade/Fade.component";
+
 import landingSectionImage from "../../assets/images/juggernaut-hero-section-bg.jpg";
 
-import "./Landing.scss";
-import Fade from "../../UI/Fade/Fade";
+import { Container, TextsContainer, BackgroundImageContainer } from "./Landing.styles.jsx";
 
 const Landing = () => {
     return (
-        <div className="landing">
-            <div className="landing__texts">
+        <Container>
+            <TextsContainer>
                 <h1 className="heading-primary">Defense of the Ancients</h1>
                 <p>
                     Dear hero, you are not powerless. You are quite possibly full of powers. So will
@@ -24,14 +25,14 @@ const Landing = () => {
                         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//icons/steam_icon.svg"
                     }
                 />
-            </div>
+            </TextsContainer>
 
-            <div className="landing__img">
+            <BackgroundImageContainer>
                 <img src={landingSectionImage} alt="" />
-            </div>
+            </BackgroundImageContainer>
 
             <Fade />
-        </div>
+        </Container>
     );
 };
 

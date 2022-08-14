@@ -1,25 +1,25 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import ButtonLink from "../../components/ButtonLink/ButtonLink.component";
-import Navigation from "../../components/Navigation/Navigation";
-import Logo from "../../components/Logo/Logo";
 
-import "./Header.scss";
+import Navigation from "../../components/Navigation/Navigation.component";
+import Logo from "../../components/Logo/Logo.component";
+import ButtonLink from "../../components/ButtonLink/ButtonLink.component";
+
+import { Main, NavContainer, PlayNowButton } from "./Header.styles.jsx";
 
 const Header = () => {
     return (
         <>
-            <header className="header">
-                <div className="header__nav-container">
+            <Main>
+                <NavContainer>
                     <Logo />
                     <Navigation />
-                </div>
-                <ButtonLink
-                    className="header__playnow"
+                </NavContainer>
+                <PlayNowButton
                     title="Play Now"
                     url="https://store.steampowered.com/app/570/Dota_2/"
                 />
-            </header>
+            </Main>
             <Outlet />
         </>
     );

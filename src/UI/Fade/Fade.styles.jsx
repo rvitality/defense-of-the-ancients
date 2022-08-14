@@ -1,4 +1,6 @@
-.fade-divider {
+import styled from "styled-components";
+
+export const Main = styled.div`
     background: linear-gradient(
         0deg,
         #000 0,
@@ -28,4 +30,4 @@
         bottom: unset;
         transform: rotate(180deg);
     }
-}
+`;
