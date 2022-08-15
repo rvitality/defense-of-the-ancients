@@ -17,7 +17,7 @@ const App = () => {
     return (
         <Routes>
             <Route
-                path="/"
+                path="/defense-of-the-ancients"
                 element={
                     <>
                         <Header />
