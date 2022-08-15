@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/defense-of-the-ancients/static/css/main.d45a9477.css",
+    "main.js": "/defense-of-the-ancients/static/js/main.a8666c89.js",
+    "static/js/787.eef7e962.chunk.js": "/defense-of-the-ancients/static/js/787.eef7e962.chunk.js",
+    "static/media/choose-hero-section-bg.jpg": "/defense-of-the-ancients/static/media/choose-hero-section-bg.09ecb6aff11f6949a80c.jpg",
+    "static/media/juggernaut-hero-section-bg.jpg": "/defense-of-the-ancients/static/media/juggernaut-hero-section-bg.1b29c91d63a7de0d7712.jpg",
+    "index.html": "/defense-of-the-ancients/index.html",
+    "main.d45a9477.css.map": "/defense-of-the-ancients/static/css/main.d45a9477.css.map",
+    "main.a8666c89.js.map": "/defense-of-the-ancients/static/js/main.a8666c89.js.map",
+    "787.eef7e962.chunk.js.map": "/defense-of-the-ancients/static/js/787.eef7e962.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d45a9477.css",
+    "static/js/main.a8666c89.js"
+  ]
+}
